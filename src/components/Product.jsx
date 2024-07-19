@@ -1,4 +1,4 @@
-export const Product = ({ name, imgUrl, price }) => {
+const Product = ({ name, imgUrl, price }) => {
   return (
     <div>
       <h2>{name}</h2>
@@ -8,4 +8,4 @@ export const Product = ({ name, imgUrl, price }) => {
   );
 };
 
-// export default Product;
+export default Product;

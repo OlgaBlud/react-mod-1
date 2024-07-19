@@ -1,6 +1,9 @@
 // src/components/App.jsx
 
-import { Product } from "./Product";
+import { Alert } from "./Alert/Alert";
+import Product from "./Product";
+
+// import { Product } from "./Product";
 
 export default function App() {
   return (
@@ -17,6 +20,18 @@ export default function App() {
         imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
         price={14.29}
       />
+      <Alert variant="info" outlined={true} elevated={false}>
+        Would you like to browse our recommended products?
+      </Alert>
+      <Alert variant="error" outlined={false} elevated={true}>
+        There was an error during your last transaction
+      </Alert>
+      <Alert variant="success" outlined={false} elevated={false}>
+        Payment received, thank you for your purchase
+      </Alert>
+      <Alert variant="warning" outlined={true} elevated={true}>
+        Please update your profile contact information
+      </Alert>
     </div>
   );
 }
